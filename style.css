@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+fieldset,
+input,
+button,
+textarea {
+  border: none;
+  background: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #F9F4Fb;
+}
+
+img {
+  width: 100%;
+}
+
+/* h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+  color: #B52164;
+} */
+
+/* p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #312D64;
+} */
+
+
+
+.page header {
+  width: 100%;
+  padding: 0 3.4rem 9.3rem 3.2rem;
+}
+
+.page header .left {
+  text-align: center;
+}
+
+.page header .left h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+  color: #B52184;
+}
+
+.page header .left p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #312D64;
+  margin-bottom: 3.5rem;
+}
+
+.page header .left .button {
+  width: 5.8rem;
+  height: 10.5rem;
+  border: 4px solid #B52184;
+  border-radius: 76rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: filter 300ms;
+}
+
+.page header .left .button:hover {
+  filter: brightness(0.7);
+}
+
+.page header .left .button img {
+  width: 3rem;
+}
+
+.page main {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-background);
+  padding: 5.3rem 3.9rem 5.5rem;
+  display: grid;
+  gap: 4.9rem;
+}
+
+.page main section {
+  background: #FFFFFF;
+  padding: 2.6rem;
+  border-radius: 2rem;
+}
+
+.page main section .text-content {
+  width: 26.5rem;
+}
+
+.page main section .text-content h1 {
+  font-size: 2.9rem;
+  font-weight: 900;
+  color: #B52184;
+}
+
+.page main section .text-content p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #312D64;
+}
+
+.page main section img {
+  width: 8rem;
+  margin-bottom: 3.3rem;
+}
+
+.page aside {
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+
+.page aside form h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #B52184;
+  margin-bottom: 4.3rem;
+}
+
+.page aside form .input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+
+.page aside form input,
+.page aside form textarea {
+  width: 100%;
+  border: 0.15rem solid #312D64;
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: #312D64;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.page aside form textarea {
+  font-family: 'Mulish', sans-serif;
+  height: 12.6rem;
+}
+
+.page aside form input::placeholder,
+.page aside form textarea::placeholder {
+  color: #312D64;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.page aside form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+.page aside form button {
+  background: var(--gradient-background);
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+.page aside form button:hover {
+  filter: brightness(0.9);
+}
+
+#name {
+  background: url(./assets/person.svg) no-repeat scroll 1.3rem 1.1rem;
+}
+
+#email {
+  background: url(./assets/at.svg) no-repeat scroll 1.3rem 1.1rem;
+}
+
+footer {
+  background: var(--gradient-background);
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: #FFFFFF;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  .page header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  .page header .left {
+    order: 1;
+    margin-top: 31.2rem;
+  }
+
+  .page header .right {
+    order: 2;
+  }
+
+  .page header .left p {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  .page header .left .button {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  .page main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 6.4rem 11.1rem 8rem;
+  }
+
+  .page main section {
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+  }
+
+  .page aside {
+    display: flex;
+    align-items: center;
+    gap: 9.2rem;
+    padding: 0;
+    height: 62.2rem;
+    margin: 0 auto;
+    background: url(./assets/11976.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .page aside form {
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+
+  .page aside .stars {
+    flex: 1;
+  }
+
+}
